@@ -17,7 +17,7 @@ def rotate_image(img, angle):
     """
     :param img: PIL image
     :param angle: 0~360
-    :return: rotate image
+    :return: rotated image
     """
     rotated_image = img.rotate(angle)
 
@@ -25,6 +25,11 @@ def rotate_image(img, angle):
 
 
 def resize_image(src_img, tgt_size=512):
+    """
+    :param src_img: PIL image
+    :param tgt_size: Image size to change
+    :return: resized image
+    """
     width, height = src_img.size
 
     if width == tgt_size and height == tgt_size:
